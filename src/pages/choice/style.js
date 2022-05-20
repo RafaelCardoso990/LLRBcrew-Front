@@ -2,12 +2,7 @@ import styled from "styled-components";
 
 
 export const Main = styled.main`
-    p{
-        font-family: 'Fredoka', sans-serif;
-        font-size: 2em;
-        font-weight: bold;  
-        color: white;
-    }
+    
 `
 export const Header = styled.header`
     div{
@@ -28,7 +23,41 @@ export const Header = styled.header`
     }
 `
 export const Section = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+
     img{
+        background-color: white;
         width: 12em;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        border-radius: 15px;
     }
+
+    div{
+        display: flex;
+        align-items: center;
+
+    }
+
+    p{               
+        font-family: 'Fredoka', sans-serif;
+        font-size: 25px;
+        font-weight: bold;                  
+        color: white;
+        margin-left: 20px;
+    }
+`
+
+export const Description = styled.h1` 
+        font-family: 'Fredoka', sans-serif;
+        font-size: 30px;
+        font-weight: bold;  
+        color: white;    
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 5px;
 `
