@@ -44,6 +44,7 @@ const AboutHeader = styled.header`
     align-items: center;
     justify-content: center;
     position: fixed;
+    top: 0px;
 
     h1 {
         font-family: 'Raleway';
@@ -53,3 +54,43 @@ const AboutHeader = styled.header`
         color: #000000;
     }
 `;
+
+const AboutMain = styled.main`
+    width: 300px;
+    height: fit-content;
+    margin-top: 80px;
+    margin-bottom: 30px;
+
+    h1 {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 23px;
+        color: #FFFFFF;
+        margin-bottom: 7px;
+    }
+`;
+
+const Button = styled.div`
+    width: 300px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+    ion-icon {
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+`;
+

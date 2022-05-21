@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {ParamContext} from "./assets/context/ParamContext";
-import {useState} from "react";
+import { ParamContext } from "./assets/context/ParamContext";
+import { useState } from "react";
 
 import Choice from "./pages/choice";
 import Login from "./pages/Login";
