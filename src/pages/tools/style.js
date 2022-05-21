@@ -53,11 +53,40 @@ export const Section = styled.section`
 `
 
 export const Description = styled.h1` 
-        font-family: 'Fredoka', sans-serif;
-        font-size: 30px;
-        font-weight: bold;  
-        color: white;    
-        text-align: center;
-        margin-bottom: 50px;
-        padding: 5px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    font-weight: bold;  
+    color: white;    
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 5px;
+`
+export const Footer = styled.footer`
+    display: flex;
+
+    svg{        
+        color:white;
+        font-size: 3em;
+    }
+`
+export const ButtonLeft = styled.div`
+    position: absolute;
+    bottom: 120px;
+    left: 35px;
+`
+
+export const ButtonRight = styled.div`
+    position: absolute;
+    bottom: 120px;
+    right: 35px;
+`
+export const Video = styled.div`
+    margin: 0 auto;
+    margin-top: 50px;
+
+    iframe{
+        width: 80vw;
+        height: 60vh;
+        border-radius: 10px;
+    }
 `

@@ -2,41 +2,46 @@
 import axios from 'axios'
 import {useEffect,useContext} from 'react'
 import { ParamContext } from '../../assets/context/ParamContext'
+import { BsArrowRightSquare, BsArrowLeftSquare } from "react-icons/bs";
 
-import { Main, Header, Section, Description } from './style'
+import { Main, Header, Section, Description, Footer, ButtonLeft, ButtonRight, Video } from './style'
 
 function Tools(){
     const {param} = useContext(ParamContext);
     console.log(param)
     
     useEffect(() => {
-        if (param) {
+        if (!param) {
+
+        }   
         const promise = axios({
             method: "GET",
             url: `https://llrb-crew.herokuapp.com/content/${param}`,
-            headers: {Authorization: `Bearer 5b9317e4-6674-458f-95ed-68ba35de3e69`}
+            headers: {Authorization: `Bearer b751b4d4-bad8-432d-9e2d-220867bbdb4b`}
         });
 
-        promise.then(({data}) => {
-            console.log(data)
+        promise.then(({response}) => {
+            console.log(response.data)
         });
         promise.catch((e)=>{
             console.log(e)
-        })}
-    }, [param]);
+        })
+    }, []);
 
     return(        
         <Main>
             <Header>
                 <div>
-                    <p>Escolha</p>
+                    <p>{param}</p>
                 </div>
             </Header>
             <Section>
-                <Description>
-
-                </Description>                
+                <Video><iframe src="https://www.youtube.com/embed/Rq5SEhs9lws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Video>
             </Section>
+            <Footer>
+                <ButtonLeft><BsArrowLeftSquare/></ButtonLeft>    
+                <ButtonRight><BsArrowRightSquare/></ButtonRight>
+            </Footer>
         </Main>             
     )
 }
