@@ -71,13 +71,13 @@ export const Footer = styled.footer`
 `
 export const ButtonLeft = styled.div`
     position: absolute;
-    bottom: 120px;
+    bottom: 10px;
     left: 35px;
 `
 
 export const ButtonRight = styled.div`
     position: absolute;
-    bottom: 120px;
+    bottom: 10px;
     right: 35px;
 `
 export const Video = styled.div`
@@ -86,7 +86,7 @@ export const Video = styled.div`
 
     iframe{
         width: 80vw;
-        height: 60vh;
+        height: 40vh;
         border-radius: 10px;
     }
 `
